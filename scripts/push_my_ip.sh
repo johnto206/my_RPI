@@ -83,6 +83,6 @@ EOL
 log "committing to git repo"
 git commit -am "auto IP commit $timestamp" >/dev/null 2>&1 # commit the change in git
 #git push origin master                     >/dev/null 2>&1 # push to GitLab
-git push origin master                     2>&1 # push to GitLab
+git push                      2>&1 # push to GitLab
 log "done"
 popd >/dev/null 2>&1                                       # return to original folder
